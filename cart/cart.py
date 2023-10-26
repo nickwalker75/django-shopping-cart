@@ -29,6 +29,8 @@ class Cart(object):
                 'name': product.name,
                 'quantity': 1,
                 'price': str(product.price),
+                'on_sale': product.on_sale,
+                'sale_price': product.sale_price,
                 
             }
         else:
@@ -49,6 +51,8 @@ class Cart(object):
                     'name': product.name,
                     'quantity': 1,
                     'price': str(product.price),
+                    'on_sale': product.on_sale,
+                    'sale_price': product.sale_price,
                 }
 
         self.save()
